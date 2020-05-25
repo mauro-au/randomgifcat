@@ -40,7 +40,8 @@
       <button @click="gifcat">Obtener mi gato</button>
     </div>
     <div class="result__gif">
-        <span v-show="datagif.isLoading">Cargando Gato...</span>
+        <span v-show="datagif.isLoading">
+            <img src="../assets/loading.svg" alt=""></span>
         <img v-show="!datagif.isLoading" :src="this.gif" alt=''/>
     </div>
   </div>
@@ -92,6 +93,7 @@ body {
 }
 h1{
     text-align: center;
+    font-size: 3rem;
 }
 .row {
   background: pink;
