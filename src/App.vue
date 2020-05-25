@@ -1,6 +1,19 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Welcome to Your Vue.js App</h1>
+  <div>
+    <GifCat msg='Random Gif Cat'></GifCat>
   </div>
 </template>
+
+<script>
+import GifCat from './components/GifCat'
+
+  export default {    
+    components:{
+      GifCat
+    }
+  }
+</script>
+
+<style>
+
+</style>
